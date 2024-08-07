@@ -1,0 +1,116 @@
+
+
+body{
+    padding: 0;
+    margin: 0;
+    font-family: 'Outfit', sans-serif;
+}
+
+.navbar{
+    font-weight:bolder;
+    height: 6vh;
+    display: flex;
+    align-items: center;
+    background-color: #d3d3d3;
+    padding: 10px 40px;
+    justify-content: space-between;
+}
+
+.navbar img{
+    width: 155px;
+}
+
+.navbar section {
+    display: flex;
+    justify-content: center;
+    gap: 878px; 
+}
+
+.navbar section a {
+    color: #000000;
+    font-size: 15px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.navbar section a img {
+   width: 20px;
+}
+
+.navbar div{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.navbar div img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+h1{
+    width: 90%;
+    margin-left: 9.1%;
+    margin-top: 60px;
+    margin-bottom: 3%;
+    font-size: 35px;
+}
+
+
+.card {
+    display: flex;
+    flex-direction: column;
+    background-color: transparent;
+    border: 1px solid #d3d3d3;
+    width: 80vw;
+    padding: 15px;
+    border-radius: 9px;
+    box-shadow: 1px 1px 2px #000000;
+
+    /* Centralizando horizontalmente */
+    margin-left: auto;
+    margin-right: auto;
+
+    /* Centralizando verticalmente o conteúdo */
+    align-items: center;
+}
+
+.card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.card p {
+    margin: 0;
+    align-self: flex-start;
+    margin-left: 25px; 
+}
+.card.vermelho {
+    background-color: rgba(254, 0, 0, 0.5);
+}
+.card.verde {
+    background-color: rgba(46, 222, 18, 0.5);
+}
+.card.amarelo {
+    background-color: rgba(251, 255, 44, 0.5);   
+}
+
+@media screen and (max-width: 768px) {
+    .navbar {
+        padding: 10px 20px; 
+    }
+    .navbar section {
+        gap: 20px;
+        justify-content: center; 
+    }
+    .card {
+        width: 90vw; 
+        padding: 10px; 
+    }
+    .card p {
+        margin-left: 15px; 
+    }
+}
