@@ -53,14 +53,14 @@ body {
  
 
 .container {
-    padding: 20px;
+    padding: 60px;
+    height: 350px;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(43, 255, 0, 0.2);
-    max-width: 400px;
-    width: 100%;
+    box-shadow: 0 4px 8px rgba(43, 255, 0, 0.452);
+    max-width: 1000px;
     text-align: left;
     margin: 20px auto;
-    margin-top: 100px;  /* Add top margin to avoid content being hidden under the fixed navbar */
+    margin-top: 100px;  
 }
 
 h1 {
@@ -82,39 +82,45 @@ h2 {
 }
 
 .details {
-    color: #4d4d4d;
     font-size: 14px;
     margin-bottom: 20px;
 }
 
-.problem-description {
-    background-color: #f9f9f9;
-    border: 1px solid #e0e0e0;
-    border-radius: 5px;
-    padding: 10px;
-}
-
-.problem-description p {
-    margin: 0;
-    font-size: 14px;
-    color: #4d4d4d;
-}
 .link-btn {
-    text-decoration: none;  /* Remove underline */
+    text-decoration: none;  
 }
 
 .btn-voltar {
-    padding: 10px 30px;
+    padding: 6px 25px;
+    margin-left: 900px;
+    margin-top: 200px;
     border: 2px solid #c0c0c0;
-    border-radius: 25px;
+    border-radius: 20px;
     background-color: #fff;
     color: #000;
     font-size: 16px;
-    cursor: pointer;
+    text-decoration: none;
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .btn-voltar:hover {
     background-color: #f0f0f0;
     color: #000;
+}
+
+.card {
+    padding: 60px;
+    height: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(43, 255, 0, 0.452);
+    max-width: 1000px;
+    text-align: left;
+    margin: 20px auto;
+    margin-top: 100px;  
+}
+.descricao {
+    color: #939393;
+}
+.descricao1 {
+    color: #939393;
 }
