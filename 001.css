@@ -56,11 +56,11 @@ body {
     padding: 60px;
     height: 350px;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(43, 255, 0, 0.452);
+    box-shadow: 0 4px 8px rgba(73, 73, 73, 0.452);
     max-width: 1000px;
     text-align: left;
     margin: 20px auto;
-    margin-top: 100px;  
+    margin-top: 60px;  
 }
 
 h1 {
@@ -92,8 +92,8 @@ h2 {
 
 .btn-voltar {
     padding: 6px 25px;
-    margin-left: 900px;
-    margin-top: 200px;
+    margin-left: 50em;
+    margin-top: 50em;
     border: 2px solid #c0c0c0;
     border-radius: 20px;
     background-color: #fff;
@@ -112,11 +112,12 @@ h2 {
     padding: 60px;
     height: 40px;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(43, 255, 0, 0.452);
+    box-shadow: 0 4px 8px rgba(73, 73, 73, 0.452);
     max-width: 1000px;
     text-align: left;
-    margin: 20px auto;
-    margin-top: 100px;  
+    margin: 60px auto;
+    align-items: center;
+    justify-content: center;
 }
 .descricao {
     color: #939393;
@@ -124,3 +125,20 @@ h2 {
 .descricao1 {
     color: #939393;
 }
+
+.thaila {
+    margin-top: 40px;
+}
+
+
+.caixa {
+    margin: 40px 30px 50px 60px;
+
+    display: flex;
+    flex-wrap: 1;
+    flex-grow: 1;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
