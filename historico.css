@@ -97,20 +97,3 @@ h1{
 .card.amarelo {
     background-color: rgba(251, 255, 44, 0.5);   
 }
-
-@media screen and (max-width: 768px) {
-    .navbar {
-        padding: 10px 20px; 
-    }
-    .navbar section {
-        gap: 20px;
-        justify-content: center; 
-    }
-    .card {
-        width: 90vw; 
-        padding: 10px; 
-    }
-    .card p {
-        margin-left: 15px; 
-    }
-}

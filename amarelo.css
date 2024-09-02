@@ -1,4 +1,4 @@
-
+/* CSS Básico */
 body {
     font-family: 'Outfit', sans-serif;
     background-color: #fafafa;
@@ -34,7 +34,6 @@ body {
     text-decoration: none;
     display: flex;
     align-items: center;
-    width: 10em;
     gap: 8px;
 }
 
@@ -56,11 +55,12 @@ body {
 
 .container {
     padding: 30px;
+    width: 100%;
     max-width: 1200px;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(73, 73, 73, 0.5);
+    box-shadow: 0 4px 8px rgba(247, 230, 3, 0.4);
     text-align: left;
-    margin: 20px auto 30px;
+    margin: 30px auto 20px;
 }
 
 h1 {
@@ -114,20 +114,7 @@ form {
     background-color: #f0f0f0;
 }
 
-.card {
-    padding: 30px;
-    max-width: 1200px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(73, 73, 73, 0.5);
-    text-align: left;
-    margin: 30px auto;
-}
-
-.descricao {
-    color: #939393;
-}
-
-.descricao1 {
+.descricao, .descricao1 {
     color: #939393;
 }
 
@@ -252,3 +239,4 @@ form {
         margin-top: 10px;
     }
 }
+

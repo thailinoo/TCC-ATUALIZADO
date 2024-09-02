@@ -73,42 +73,19 @@ body.custom-background {
     max-height: 200px;
 }
 
-/* Media query para telas menores */
-@media screen and (max-width: 768px) {
-    body.custom-background {
-        background-image: none;
-        background: linear-gradient(#000000, #fafafa 250%);
-    }
+.btn-voltar {
+    padding: 8px 20px;
+    border: 2px solid #c0c0c0;
+    border-radius: 20px;
+    background-color: #fff;
+    color: #000;
+    font-size: 14px;
+    text-decoration: none;
+    text-align: center;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    cursor: pointer;
+}
 
-    .login-container {
-        height: 80vh;
-    }
-
-    .card {
-        width: 80vw;
-        padding: 10px;
-    }
-
-    .logo-container img {
-        max-width: 150px;
-    }
-
-    .login-form input[type="text"],
-    .login-form input[type="password"] {
-        padding: 5px;
-    }
-
-    .login-form button {
-        padding: 5px 10px;
-    }
-
-    .card {
-        width: 40vw;
-        padding: 5%;
-    }
-
-    .logo {
-        max-width: 150px;
-        max-height: 100px;
-    }
+.btn-voltar:hover {
+    background-color: #f0f0f0;
 }
