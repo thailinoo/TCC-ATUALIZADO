@@ -11,12 +11,28 @@
 </head>
 
 <body>
-    <div class="navbar">
-        <img src="assets/img/imagem-removebg-preview.png" alt=".">
-        <section>
-            <a href="historico.html">Histórico</a>
-            <a href="index.html">Sair</a>
-        </section>
+    <nav class="nav-bar">
+        <div class="logo">
+        <img src="assets/img/imagem-removebg-preview.png" alt="Logo">
+        </div>
+        <div class="nav-list">
+            <ul>
+                <li class="nav-item"><a href="#" class="nav-link">Histórico</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Nova ocorrência</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Sair</a></li>
+            </ul>
+        </div>
+
+        <div class="mobile-menu-icon">
+            <button onclick="menuShow()"><img class="icon" src="assets/img/menu.svg" alt="menu"></button>
+        </div>
+    </nav>
+    <div class="mobile-menu">
+        <ul>
+            <li class="nav-item"><a href="historico.html" class="nav-link">Histórico</a></li>
+            <li class="nav-item"><a href="index.html" class="nav-link">Sair</a></li>
+        </ul>
+    </div>
     </div>
     <h1>
         DEVOLUÇÕES
@@ -51,7 +67,7 @@
     <div class="card">
         <p><a href="008.html">12/09/2024 - Teclado quebrado</a></p>
     </div> <br>
-
+    <script src="assets/js/nav.js"></script>
 </body>
 
 </html>
