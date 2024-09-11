@@ -9,13 +9,29 @@
     <link rel="stylesheet" href="assets/css/001.css">
 </head>
 <body>
-    <div class="navbar">
-        <img src="assets/img/imagem-removebg-preview.png" alt=".">
-        <section>
-            <a href="historico.html">Histórico</a>
-            <a href="index.html">Sair</a>
-        </section>
-    </div>
+    <header>
+        <nav class="nav-bar">
+            <div class="logo">
+            <img src="assets/img/imagem-removebg-preview.png" alt="Logo">
+            </div>
+            <div class="nav-list">
+                <ul>
+                    <li class="nav-item"><a href="devolucoes.html" class="nav-link">Devoluções</a></li>
+                    <li class="nav-item"><a href="index.html" class="nav-link">Sair</a></li>
+                </ul>
+            </div>
+    
+            <div class="mobile-menu-icon">
+                <button onclick="menuShow()"><img class="icon" src="assets/img/menu.svg" alt="menu"></button>
+            </div>
+        </nav>
+        <div class="mobile-menu">
+            <ul>
+                <li class="nav-item"><a href="historico.html" class="nav-link">Histórico</a></li>
+                <li class="nav-item"><a href="index.html" class="nav-link">Sair</a></li>
+            </ul>
+        </div>
+    </header>
 
     <div class="container">
         <h1>OCORRÊNCIA</h1>
@@ -43,4 +59,5 @@
         <button type="submit" class="btn-voltar">Voltar</button>
     </form>
 </body>
+<script src="assets/js/nav.js"></script>
 </html>

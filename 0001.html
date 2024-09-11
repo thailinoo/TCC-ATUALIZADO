@@ -9,13 +9,30 @@
     <link rel="stylesheet" href="assets/css/ocorrencia.css">
 </head>
 <body>
-    <div class="navbar">
-        <img src="assets/img/imagem-removebg-preview.png" alt=".">
-        <section>
-            <a href="historico.html">Histórico</a>
-            <a href="index.html">Sair</a>
-        </section>
-    </div>
+    <header>
+        <nav class="nav-bar">
+            <div class="logo">
+            <img src="assets/img/imagem-removebg-preview.png" alt="Logo">
+            </div>
+            <div class="nav-list">
+                <ul>
+                    <li class="nav-item"><a href="historico.html" class="nav-link"></a></li>
+                    <li class="nav-item"><a href="devolucoes.html" class="nav-link">Devoluções</a></li>
+                    <li class="nav-item"><a href="index.html" class="nav-link">Sair</a></li>
+                </ul>
+            </div>
+    
+            <div class="mobile-menu-icon">
+                <button onclick="menuShow()"><img class="icon" src="assets/img/menu.svg" alt="menu"></button>
+            </div>
+        </nav>
+        <div class="mobile-menu">
+            <ul>
+                <li class="nav-item"><a href="historico.html" class="nav-link">Histórico</a></li>
+                <li class="nav-item"><a href="index.html" class="nav-link">Sair</a></li>
+            </ul>
+        </div>
+    </header>
 
     <div class="container">
         <h1>OCORRÊNCIA</h1>
@@ -34,11 +51,14 @@
         </div> 
     </div>
     <div class="card">
-        <label for="message">Mensagem:</label>
-        <textarea id="message" name="message" rows="4" required></textarea>
+        <div>
+            <p><strong>Resolução do problema:</strong></p>
+            <textarea name="descricao1" id="descricao1" rows="10" cols="90"></textarea>
+          </div>
     </div>
     <form action="confirmar.html" method="get">
         <button type="submit" class="btn-voltar">Enviar</button>
     </form>
+    <script src="assets/js/nav.js"></script>
 </body>
 </html>

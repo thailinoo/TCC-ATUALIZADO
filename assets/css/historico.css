@@ -1,14 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit&display=swap');
+
 * {
     padding: 0;
     margin: 0;
     font-family: 'Outfit', sans-serif;
 }
- 
+
 header {
-    background-color: rgba(102, 51, 153, 0.911);
+    background-color: #d3d3d3;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
-    
 }
 
 .nav-bar {
@@ -16,53 +16,55 @@ header {
     justify-content: space-between;
     padding: 1.5rem 6rem;
 }
- 
+
 .logo img {
     display: flex;
     align-items: center;
-      height: auto;
-        width: 110px;
+    height: auto;
+    width: 110px;
 }
- 
+
 .nav-list {
     display: flex;
     align-items: center;
 }
- 
+
 .nav-list ul {
     display: flex;
     justify-content: center;
     list-style: none;
 }
- 
+
 .nav-item {
     margin: 0 15px;
 }
- 
+
 .nav-link {
     text-decoration: none;
     font-size: 1.15rem;
-    color: #000000;
+    color: #000000; /* Define a cor preta para o texto do link */
     font-weight: bolder;
 }
- 
+
+.nav-link:hover {
+    color: #555555; /* Define a cor cinza escuro para o texto do link quando o cursor está sobre ele */
+}
+
 .mobile-menu-icon {
     display: none;
 }
- 
+
 .mobile-menu {
     display: none;
 }
- 
 
-h1{
+h1 {
     width: 90%;
     margin-left: 9.1%;
     margin-top: 60px;
     margin-bottom: 3%;
     font-size: 35px;
 }
-
 
 .card {
     display: flex;
@@ -87,19 +89,30 @@ h1{
 .card p {
     margin: 0;
     align-self: flex-start;
-    margin-left: 25px; 
+    margin-left: 25px;
 }
+
 .card.vermelho {
     background-color: rgba(254, 0, 0, 0.5);
-    text-decoration: none;
 }
+
+
 .card.verde {
     background-color: rgba(46, 222, 18, 0.5);
-    text-decoration: none;
 }
+
 .card.amarelo {
-    background-color: rgba(251, 255, 44, 0.5);   
-    text-decoration: none;
+    background-color: rgba(251, 255, 44, 0.5);
+}
+
+
+.card a {
+    color: #000000; 
+    text-decoration: none; 
+}
+
+.card a:hover {
+    color: #555555; 
 }
 
 @media screen and (max-width: 730px) {
@@ -130,8 +143,7 @@ h1{
     .open {
         display: block;
     }
-    .nav-list{
-        display:none;
+    .nav-list {
+        display: none;
     }
-   
 }

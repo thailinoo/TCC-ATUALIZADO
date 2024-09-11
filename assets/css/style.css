@@ -8,7 +8,7 @@ body.custom-background {
     font-family: 'Outfit', sans-serif;
     background-size: cover;
     background-position: top left;
-    background: linear-gradient( rgb(70, 6, 134), #fafafa 300%);
+    background: linear-gradient( rgb(0, 0, 0), #fafafa 420%);
 }
 
 .login-container {
@@ -57,8 +57,8 @@ body.custom-background {
 }
 
 .login-form button {
-    background-color: rgba(63, 9, 117, 0.911);
-    color: #fafafa;
+    background-color: #d3d3d3;
+    color: #000000;
     border: none;
     padding: 10px 20px;
     border-radius: 5px;
