@@ -12,7 +12,7 @@
     <header>
         <nav class="nav-bar">
             <div class="logo">
-            <img src="assets/img/imagem-removebg-preview.png" alt="Logo">
+                <img src="assets/img/imagem-removebg-preview.png" alt="Logo">
             </div>
             <div class="nav-list">
                 <ul>
@@ -51,14 +51,44 @@
         </div> 
     </div>
     <div class="card">
-        <div>
-            <p><strong>Resolução do problema:</strong></p>
-            <textarea name="descricao1" id="descricao1" rows="10" cols="90"></textarea>
+        <div class="problema">
+            <p class="descricao2"><strong>Resolução do problema:</strong></p>
+            <textarea name="descricao1" id="descricao1" rows="10" cols="160"></textarea>
           </div>
     </div>
-    <form action="confirmar.html" method="get">
-        <button type="submit" class="btn-voltar">Enviar</button>
+
+    <form id="ocorrenciaForm" action="devolucoes.html" method="get">
+        <button type="button" class="btn-voltar" onclick="confirmarEnvio()">Enviar</button>
     </form>
+
+    <script>
+        function confirmarEnvio() {
+            const textarea = document.getElementById('descricao1').value;
+            if (textarea.trim() === '') {
+                alert('Por favor, preencha a descrição do problema.');
+                return;
+            }
+            // Confirmação de envio
+            if (confirm('Tem certeza que deseja enviar?')) {
+                document.getElementById('ocorrenciaForm').submit();
+            }
+        }
+
+        // Restaurar os dados do formulário quando a página for carregada
+        window.onload = function() {
+            const descricao = localStorage.getItem('descricao');
+            if (descricao) {
+                document.getElementById('descricao1').value = descricao;
+                localStorage.removeItem('descricao');
+            }
+        };
+
+        // Salvar dados no localStorage antes da navegação
+        window.addEventListener('beforeunload', function() {
+            const descricao = document.getElementById('descricao1').value;
+            localStorage.setItem('descricao', descricao);
+        });
+    </script>
     <script src="assets/js/nav.js"></script>
 </body>
 </html>
